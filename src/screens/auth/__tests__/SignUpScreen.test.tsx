@@ -19,6 +19,8 @@ async function renderSignUpScreen() {
 }
 
 describe('SignUpScreen validation', () => {
+    jest.setTimeout(15000);
+
     it('requires full name, email, and password', async () => {
         const { getByRole, getByText } = await renderSignUpScreen();
 

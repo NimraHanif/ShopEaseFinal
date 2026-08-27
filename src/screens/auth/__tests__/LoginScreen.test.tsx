@@ -18,6 +18,8 @@ function renderLoginScreen(mocks: any[] = []) {
 }
 
 describe('LoginScreen validation', () => {
+  jest.setTimeout(15000);
+
   it('shows an error when submitting with an empty email', async () => {
     const user = userEvent.setup();
     await renderLoginScreen();

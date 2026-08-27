@@ -1,7 +1,8 @@
 module.exports = {
   preset: '@react-native/jest-preset',
+  setupFiles: ['./jest.setup.js'],
   setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
   transformIgnorePatterns: [
-    'node_modules/(?!((jest-)?react-native|@react-native(-community)?|@react-navigation|react-redux|@reduxjs/toolkit|immer|redux|@apollo|react-native-vector-icons|@react-native-async-storage)/)',
+    'node_modules/(?!((jest-)?react-native.*|@react-native.*|@react-navigation.*|react-redux|@reduxjs/toolkit|immer|redux|@apollo)/)',
   ],
 };

@@ -52,7 +52,7 @@ export default function SplashScreen() {
   }, [token, runMeQuery, dispatch]);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID="splash-screen">
       <Text style={styles.logoText}>ShopEase</Text>
 
       <ActivityIndicator size="large" color="#2ecc71" />
